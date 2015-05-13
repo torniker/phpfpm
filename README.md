@@ -2,6 +2,7 @@ Docker From php:5.6.8-fpm
 
 Added libraries: 
 
+ * mysql
  * iconv
  * mcrypt
  * mbstring
