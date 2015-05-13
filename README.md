@@ -15,7 +15,7 @@ Add to your docker-compose.yml file following:
 ```
 phpfpm: 
   command: php-fpm --allow-to-run-as-root
-  image: torniker/phpfpm
+  image: torniker/phpfpm-5.6
   volumes:
     - /path/to/fpm.conf:/usr/local/etc/php-fpm.conf
     - /path/to/php.ini:/usr/local/etc/php/php.ini
