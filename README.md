@@ -2,11 +2,24 @@ Docker From php:5.6.8-fpm
 
 Added libraries: 
 
- * mysql
  * iconv
+ * json
  * mcrypt
  * mbstring
- * gd
+ * mysql
+ * mysqli
+ * pdo_mysql
+ * pdo_sqlite
+ * phar
+ * curl
+ * ftp
+ * hash
+ * session
+ * simplexml
+ * tokenizer
+ * xml
+ * xmlrpc
+ * zip
 
 # Docker compose usage
 
