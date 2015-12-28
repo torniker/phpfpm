@@ -1,4 +1,4 @@
-FROM php:5.6.8-fpm
+FROM php:7.0.1-fpm
 # Install modules
 RUN apt-get update && apt-get install -y \
         libfreetype6-dev \
@@ -10,7 +10,7 @@ RUN apt-get update && apt-get install -y \
         libcurl3-dev \
         libxml2-dev \
         libzzip-dev \
-    && docker-php-ext-install iconv json mcrypt mbstring mysql mysqli pdo_mysql pdo_sqlite phar curl ftp hash session simplexml tokenizer xml xmlrpc zip \
+    && docker-php-ext-install mcrypt mbstring mysql mysqli pdo_mysql ftp xmlrpc zip \
     && docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-jpeg-dir=/usr/include/ \
     && docker-php-ext-install gd
 CMD ["php-fpm"]
